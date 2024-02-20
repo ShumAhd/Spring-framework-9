@@ -1,4 +1,4 @@
-package com.example.productservice.cartservice;
+package com.example.reviewservice;
 
 import org.junit.jupiter.api.Test;
 

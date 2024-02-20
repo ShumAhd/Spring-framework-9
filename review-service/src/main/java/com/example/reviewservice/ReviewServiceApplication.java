@@ -1,6 +1,6 @@
-package com.example.cartservice;
+package com.example.reviewservice;
 
-public class CartServiceApplication {
+public class ReviewServiceApplication {
   public static void main(String[] args) {
     System.out.println("Hello World!");
   }
