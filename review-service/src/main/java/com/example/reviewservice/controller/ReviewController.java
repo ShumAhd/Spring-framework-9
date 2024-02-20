@@ -1,7 +1,7 @@
-package com.example.productservice.controller;
+package com.example.reviewservice.controller;
 
-import com.example.productservice.model.Product;
-import com.example.productservice.repository.ProductRepository;
+import com.example.reviewservice.model.Review;
+import com.example.reviewservice.repository.ReviewRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,25 +13,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/products")
-public class ProductController {
+@RequestMapping("/review")
+public class ReviewController {
 
   @Autowired
-  private ProductRepository productRepository;
+  private ReviewRepository reviewRepository;
 
   @GetMapping
-  public List<Product> getAllProducts() {
-    return productRepository.findAll();
+  public List<Review> getAllReviews() {
+    return reviewRepository.findAll();
   }
 
   @PostMapping
-  public Product addProduct(@RequestBody Product product) {
-    return productRepository.save(product);
+  public Review addReview(@RequestBody Review review) {
+    return reviewRepository.save(review);
   }
 
   @DeleteMapping("/{id}")
-  public void deleteProduct(@PathVariable Long id) {
-    productRepository.deleteById(id);
+  public void deleteReview(@PathVariable Long id) {
+    reviewRepository.deleteById(id);
   }
 }
-

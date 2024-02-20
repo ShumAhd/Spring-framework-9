@@ -11,10 +11,10 @@ http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>review-service</artifactId>
+  <artifactId>eureka-server</artifactId>
   <packaging>jar</packaging>
 
-  <name>review-service</name>
+  <name>eureka-server</name>
   <url>http://www.example.com</url>
 
   <properties>
@@ -33,12 +33,13 @@ http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
-      <version>5.7.1</version>
+      <version>5.9.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+      <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+      <version>3.0.2</version>
     </dependency>
   </dependencies>
 

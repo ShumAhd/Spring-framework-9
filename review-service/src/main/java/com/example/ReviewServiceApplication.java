@@ -1,4 +1,4 @@
-package com.example.productservice;
+package com.example;
 
 public class ReviewServiceApplication {
   public static void main(String[] args) {
