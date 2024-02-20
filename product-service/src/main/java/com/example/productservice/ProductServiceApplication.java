@@ -1,4 +1,4 @@
-package com.example.cartservice;
+package com.example.productservice;
 
 public class ProductServiceApplication {
   public static void main(String[] args) {
